@@ -41,7 +41,7 @@ class DigitalInkRecognitionPage extends StatefulWidget {
 }
 
 class _DigitalInkRecognitionPageState extends State<DigitalInkRecognitionPage> {
-  final String _model = 'en-US';
+  final String _model = 'hi-IN';
 
   DigitalInkRecognitionState get state => Provider.of(context, listen: false);
   late DigitalInkRecognition _recognition;
@@ -136,18 +136,16 @@ class _DigitalInkRecognitionPageState extends State<DigitalInkRecognitionPage> {
                   child: Consumer<DigitalInkRecognitionState>(
                     builder: (_, state, __) => Stack(
                       children: [
-                        const Center(
+                         const Center(
                           child: Image(
                             //height: MediaQuery.of(context).size.height / 2.3,
-                            image: NetworkImage(
-                                'https://raw.githubusercontent.com/McoyJiang/TracingSample/master/tracinglibrary/src/main/assets/letter/4_bg.png'),
+                            image:AssetImage('assets/d.png'),
                           ),
                         ),
                         const Center(
                           child: Image(
                             //height: MediaQuery.of(context).size.height / 2.3,
-                            image: NetworkImage(
-                                'https://raw.githubusercontent.com/McoyJiang/TracingSample/master/tracinglibrary/src/main/assets/trace/4_tracing.png'),
+                            image: AssetImage('assets/d1.png'),
                           ),
                         ),
                         Center(
